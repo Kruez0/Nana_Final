@@ -5,7 +5,7 @@
     background-color: #BA98A5;
     color: white;
     padding: 60px 10vw;
-    height: calc(100vh - 76px);
+    height: 100vh;
 }
 
 .video-wrapper {
