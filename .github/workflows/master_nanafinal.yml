@@ -55,4 +55,4 @@ jobs:
           app-name: 'NanaFinal'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F27119AA4EF44E2890E8CE4BD1F13498 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E3FA2DE9DF724F0187990018A8DDC9AD }}
