@@ -10,6 +10,11 @@
     height: calc(100vh - 76px);
 
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #BA98A5;
+}
 .table {
     width: 100%;
     border-collapse: collapse; 
@@ -58,12 +63,12 @@
     }
 
     .hero-text h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 30px;
     }
 
     .hero-text p {
-        font-size: 1rem;
+        font-size: 2rem;
         margin: 5px 0;
         text-align: justify;
     }

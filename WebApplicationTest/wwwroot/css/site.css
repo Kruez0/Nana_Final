@@ -1,4 +1,4 @@
-﻿<style >
+﻿
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -33,7 +33,7 @@ body {
     }
 
 /* Responsive Styles */
-@media (max-width: 991.98px) {
+@media (max-width: 1000px) {
     .navbar-collapse {
         background-color: white;
         padding: 1rem;
@@ -51,5 +51,3 @@ body {
         align-items: flex-start;
     }
 }
-
-</style >
