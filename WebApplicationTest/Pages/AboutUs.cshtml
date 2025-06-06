@@ -1,0 +1,28 @@
+﻿@page
+@model WebApplicationTest.Pages.AboutUsModel
+@{
+    ViewData["Title"] = "Aboutus";
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/about.css">
+
+<div class="full-width-wrapper">
+    <h1 class="about-title">About Us</h1>
+    <div class="hero-text">
+        <p>劉佩芬 - 111110541</p>
+        <p>陳穎辰 - 111110507 </p>
+        <p>李麗恩 - 111210559 </p>
+        <p>劉建明 - 111110536 </p>
+        <p>莊偉真 - 111010547 </p>
+    </div>
+    <div class="hero-image" style="margin-left: 400px;">
+        <div style="display: flex; gap: 30px;">
+            <div style="width: 100%; max-width:300px;">
+                <img src="~/css/Us_1.jpeg" alt="Us1">
+                </div>
+            <div style="width: 100%; max-width:800px;">
+                <img src="~/css/Us_2.jpeg" alt="Us2">
+            </div>
+        </div>
+    </div>
+</div>

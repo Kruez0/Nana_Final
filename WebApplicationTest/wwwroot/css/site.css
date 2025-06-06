@@ -1,0 +1,55 @@
+﻿<style >
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    background-color: white !important;
+}
+
+.navbar-brand {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: black !important;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: black !important;
+    padding: 12px 16px;
+    margin: 4px 0;
+    font-weight: 500;
+}
+
+    .nav-link:hover {
+        background-color: #ffc107;
+        color: white !important;
+        border-radius: 8px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 1rem;
+        border-top: 1px solid #ddd;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin: 8px 0;
+    }
+
+    .navbar-nav {
+        align-items: flex-start;
+    }
+}
+
+</style >

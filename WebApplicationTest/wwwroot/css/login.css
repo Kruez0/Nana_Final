@@ -1,0 +1,106 @@
+﻿
+
+h3 {
+    color: #C3C1C1;
+    font-size: 24px; /* Increased font size */
+}
+
+#login-error-message {
+    color: red;
+    font-size: 1em; /* Increased font size */
+    font-family: 'Lucida Sans';
+    margin-top: 10px;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #BA98A5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: white;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 60px; /* Increased font size */
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    font-family: 'Bahnschrift Light', 'Arial', sans-serif;
+    padding: 20px 35px; /* Increased padding */
+    margin: 10px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px; /* Increased border radius */
+    font-size: 18px; /* Increased font size */
+    width: 100%; /* Make input boxes full width */
+}
+
+.login-btn {
+    background-color: #D0CECE;
+    color: white;
+    padding: 25px;
+    margin: 15px 0;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.login-btn:hover {
+    opacity: 0.8;
+}
+
+.playfair-display-title {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 1500;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Segoe UI';
+    text-align: right;
+    font-size: 12px; /* Increased font size */
+}
+

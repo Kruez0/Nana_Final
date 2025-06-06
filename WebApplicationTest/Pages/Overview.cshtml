@@ -1,0 +1,60 @@
+﻿@page
+@model WebApplicationTest.Pages.OverviewModel
+@{
+    ViewData["Title"] = "Overview";
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/Overview.css">
+
+<div class="full-width-wrapper">
+    <div class="hero-text">
+        <h1>Project Overview</h1>
+    </div>
+    <div class="scroll-container">
+        <!-- Workflow sections -->
+        <section>
+            <div class="content-box">
+                <img src="~/css/Workflow_1.jpg" alt="Workflow_1">
+            </div>
+        </section>
+        <section>
+            <div class="content-box">
+                <img src="~/css/Workflow_2.jpg" alt="Workflow_2">
+            </div>
+        </section>
+
+        <!-- Body sections -->
+        <section>
+            <div class="content-box">
+                <img src="~/css/Body_1.jpg" alt="Body_1">
+            </div>
+        </section>
+        <section>
+            <div class="content-box">
+                <img src="~/css/Body_2.jpg" alt="Body_2">
+            </div>
+        </section>
+
+        <!-- Expression section with horizontal scrolling -->
+        <section class="expression-section">
+            <div class="content-box">
+                <div class="horizontal-scroll-container">
+                    <img src="~/css/Expression_3.png" alt="Ex_3">
+                    <img src="~/css/Expression_1.png" alt="Ex_1">
+                    <img src="~/css/Expression_2.png" alt="Ex_2">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="content-box">
+                <img src="~/css/Unity.png" alt="Unityresults">
+            </div>
+        </section>
+        <section>
+            <div class="content-box">
+                <img src="~/css/Nana_dance.png" alt="Unityresults">
+            </div>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+﻿.table {
+    width: 100%;
+    border-collapse: collapse; /* Makes borders collapse into single lines */
+    background-color: #BA98A5; /* Table background color */
+    color: white; /* Optional: text color for contrast */
+    font-family: 'Arial', sans-serif;
+}
+
+    .table th, .table td {
+        border: 1px solid white; /* White lines between cells */
+        padding: 10px 15px; /* Some padding inside cells */
+        text-align: left; /* Align text to left */
+    }
+
+    .table thead th {
+        background-color: #9B7B85; /* Slightly darker shade for header */
+    }
+
+    .table tbody tr:hover {
+        background-color: #A17D88; /* Optional: highlight row on hover */
+    }
+.full-width-wrapper {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-1 * ((100vw - 100%) / 2));
+    background-color: #BA98A5;
+    color: white;
+    padding: 60px 10vw;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100vh - 76px);
+    overflow: hidden;
+}
+.logout-button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .logout-button:hover {
+        background-color: black;
+        color: white;
+    }

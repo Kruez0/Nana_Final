@@ -1,0 +1,46 @@
+﻿@page
+@model WebApplicationTest.Pages.LoginModel
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/login.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="login-container">
+            <h2 class="playfair-display-title">Log in</h2>
+            <form method="post" asp-page-handler="Login">
+                <div class="form-group">
+                    <input type="text" asp-for="inputID" class="form-control" placeholder="Enter your ID">
+                    <span class="text-danger" asp-validation-for="inputID"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" asp-for="inputPassword" class="form-control" placeholder="Enter your password">
+                    <span class="text-danger" asp-validation-for="inputPassword"></span>
+                </div>
+                <div class="button-container">
+                    <button class="login-btn" type="submit">>>></button>
+                </div>
+            </form>
+
+            @if (!string.IsNullOrEmpty(Model.message))
+            {
+                <div class="alert alert-danger mt-3">@Model.message</div>
+            }
+        </div>
+    </div>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+</body>
+</html>

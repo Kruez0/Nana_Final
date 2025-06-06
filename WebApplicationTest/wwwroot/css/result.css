@@ -1,0 +1,50 @@
+﻿.full-width-wrapper {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-1 * ((100vw - 100%) / 2));
+    background-color: #BA98A5;
+    color: white;
+    padding: 60px 10vw;
+    height: calc(100vh - 76px);
+    overflow: hidden;
+}
+
+.video-wrapper {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.hero-text h1 {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .full-width-wrapper {
+        padding: 40px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .video-wrapper {
+        margin-top: 20px;
+    }
+}

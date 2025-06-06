@@ -1,0 +1,121 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #BA98A5;
+    overflow-x: hidden;
+}
+
+.full-width-wrapper {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-1 * ((100vw - 100%) / 2));
+    background-color: #BA98A5;
+    color: white;
+    padding: 20px 10vw;
+    min-height: 100vh;
+}
+
+.hero-text {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+    .hero-text h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+.content-box {
+    background-color: #8a6d7a;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-container {
+    overflow-y: auto;
+    height: 70vh; 
+}
+
+
+section {
+    min-height: 80vh;
+    scroll-snap-align: start;
+    position: relative;
+    padding: 10px 0; 
+    margin: 10px 0; 
+}
+
+    section img {
+        max-width: 100%;
+        max-height: 70vh;
+        object-fit: contain;
+    }
+
+.horizontal-scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 5px 0; 
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 10%; 
+}
+
+    .horizontal-scroll-container img {
+        height: 70vh;
+        width: auto;
+        margin-right: 10px;
+        object-fit: contain;
+        display: inline-block;
+        scroll-snap-align: center;
+    }
+
+        .horizontal-scroll-container img:last-child {
+            margin-right: 0;
+        }
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem; 
+    }
+
+    .scroll-container {
+        height: calc(100vh - 80px);
+    }
+
+    .content-box {
+        width: 95%;
+        height: 70vh;
+        padding: 10px;
+    }
+
+    section {
+        margin: 5px 0; 
+    }
+
+    .horizontal-scroll-container {
+        padding: 5px 0;
+    }
+
+        .horizontal-scroll-container img {
+            height: 60vh;
+            margin-right: 8px;
+        }
+}
+body {
+    overflow: hidden; 
+}

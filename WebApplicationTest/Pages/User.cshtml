@@ -1,0 +1,52 @@
+﻿@page
+@model WebApplicationTest.Pages.UserModel
+@{
+}
+<link rel="stylesheet" href="~/css/database.css" />
+
+<div class="full-width-wrapper">
+    <div style="padding-top: 10px;">
+        <a href="UserAdd" style="float: right;">+ Add New Member</a>
+        <form method="post">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">password</th>
+                        <th scope="col">name</th>
+                        <th scope="col">age</th>
+                        <th scope="col">sex</th>
+                        <th scope="col">tel</th>
+                        <th scope="col">address</th>
+                        <th scope="col">edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @if(Model.dataTable != null)
+                    for (int i = 0; i < Model.dataTable.Rows.Count; i++)
+                    {
+                        <tr>
+                            <td>
+                                <a href="UserInfo?id=@Model.dataTable.Rows[i][0].ToString()">@Model.dataTable.Rows[i][0].ToString()</a>
+                            </td>
+                            <td>******</td>
+                            <td>@Model.dataTable.Rows[i][2].ToString()</td>
+                            <td>@Model.dataTable.Rows[i][3].ToString()</td>
+                            <td>@Model.dataTable.Rows[i][4].ToString()</td>
+                            <td>@Model.dataTable.Rows[i][5].ToString()</td>
+                            <td>@Model.dataTable.Rows[i][6].ToString()</td>
+                            <td>
+                                <a href="UserEdit?id=@Model.dataTable.Rows[i][0].ToString()">Edit</a>、
+                                <button type="submit" asp-route-id="@Model.dataTable.Rows[i][0].ToString()" asp-page-handler="Delete" onclick="if (!confirm('你確定嗎？')) return false;" class="btn btn-link" style="padding:0px;vertical-align:baseline;">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <form method="post">
+        <button type="submit" asp-page-handler="Logout" class="logout-button">Logout</button>
+    </form>
+</div>

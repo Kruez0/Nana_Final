@@ -1,0 +1,29 @@
+﻿@page
+@model WebApplicationTest.Pages.UserInfoModel
+@{
+}
+
+<div>
+    <a href="User">Back</a>
+    <a href="User" class="btn btn-primary">Back</a>
+</div>
+
+<div style="padding-top: 10px;">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.dataTable.Columns.Count; i++)
+            {
+                <tr>
+                    <th scope="row">@Model.dataTable.Columns[i].ToString()</th>
+                    <td>@Model.dataTable.Rows[0][i].ToString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

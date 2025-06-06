@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="JavaScript.js"></script>
+    <style>
+        a {
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .link1 {
+            color: blue;
+        }
+
+        .link2 {
+            color: green;
+        }
+    </style>
+    <script>
+        function SayHello() {
+            var str = document.getElementById("myInput").value;
+            alert(str + ", Hello!");
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color:red;font-style:italic;">National Quemoy University</h1>
+    <div style="border:1px solid red;">
+        <a href="https://www.nqu.edu.tw/" target="_blank" class="link1">NQU Link</a>
+    </div>
+    <div style="border:1px solid blue;margin-top:20px;">
+        <a href="https://csie.nqu.edu.tw/" target="_blank" class="link2">NQU CSIE Link</a>
+    </div>
+    <h2>Welcome To Learn Razor Pages</h2>
+    <p>This site is dedicated to helping developers who want to use the ASP.NET Razor Pages web development framework to build web applications.</p>
+    <a href="https://www.nqu.edu.tw/">
+        <img src="https://www.nqu.edu.tw/var/file/0/1000/img/5/logo.png" width="200" />
+    </a>
+    <div style="padding: 20px 0;">
+        <input id="myInput" type="text" />
+        <input type="button" value="Button1" onclick="alert('Hello World');" />
+        <input type="button" value="Button2" onclick="SayHello2();" />
+    </div>
+    <table id="customers">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>

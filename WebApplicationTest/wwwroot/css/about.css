@@ -1,0 +1,131 @@
+﻿.full-width-wrapper {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-1 * ((100vw - 100%) / 2));
+    background-color: #BA98A5;
+    color: white;
+    padding: 60px 10vw;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100vh - 76px);
+    overflow: hidden;
+
+}
+.table {
+    width: 100%;
+    border-collapse: collapse; 
+    background-color: #BA98A5; 
+    color: white; 
+    font-family: 'Arial', sans-serif;
+}
+
+    .table th, .table td {
+        border: 1px solid white; 
+        padding: 10px 15px; 
+        text-align: left; /* Align text to left */
+    }
+
+    .table thead th {
+        background-color: #9B7B85; /* Slightly darker shade for header */
+    }
+
+    .table tbody tr:hover {
+        background-color: #A17D88; /* Optional: highlight row on hover */
+    }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    max-width: 100%;
+}
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;    
+        height: 100%;
+    }
+
+.hero-text {
+    max-width: 70%;
+    position: relative;
+    z-index: 2;
+}
+
+    .hero-text h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-text p {
+        font-size: 2rem;
+        margin: 5px 0;
+        text-align: justify;
+    }
+
+.hero-image img {
+    width: 100%;
+    height: auto; 
+    object-fit: contain; 
+    display: block;
+    max-height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+}
+.about-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.table {
+    font-size: 1.3rem; /* Make the table font bigger */
+}
+@media (max-width: 768px) {
+    .full-width-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+        position: static;
+        height: auto;
+    }
+
+    .hero-text,
+    .hero-image {
+        max-width: 100%;
+        position: static;
+        z-index: auto;
+    }
+
+        .hero-image img {
+            width: 100%; 
+            object-fit: contain; 
+            display: block;
+            max-height: 100vh; 
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+        }
+
+        .hero-text h2 {
+            font-size: 2rem;
+        }
+
+        .hero-text p {
+            font-size: 1rem;
+            text-align: justify;
+        }
+}
+
+body {
+    overflow: hidden;
+}

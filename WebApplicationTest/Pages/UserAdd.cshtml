@@ -1,0 +1,75 @@
+﻿@page
+@model WebApplicationTest.Pages.UserAddModel
+@{
+}
+
+<div>
+    <a href="User">Back</a>
+</div>
+
+<div style="padding-top: 10px;">
+    <form method="post">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">id</th>
+                    <td>
+                        <input asp-for="user_id" placeholder="john" />
+                        <span class="text-danger" asp-validation-for="user_id"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">password</th>
+                    <td>
+                        <input asp-for="user_password" />
+                        <span class="text-danger" asp-validation-for="user_password"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">name</th>
+                    <td><input asp-for="user_name" placeholder="約翰走路" /></td>
+                </tr>
+                <tr>
+                    <th scope="row">age</th>
+                    <td><input asp-for="user_age" /></td>
+                </tr>
+                <tr>
+                    <th scope="row">sex</th>
+                    @*<td><input asp-for="user_sex" /></td>*@
+                    <td>
+                        <label>
+                            <input type="radio" asp-for="user_sex" value="true" />
+                            Male
+                        </label>
+                        <label>
+                            <input type="radio" asp-for="user_sex" value="false" />
+                            Female
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">tel</th>
+                    <td><input asp-for="user_tel" placeholder="082-313300" /></td>
+                </tr>
+                <tr>
+                    <th scope="row">address</th>
+                    <td><input asp-for="user_address" placeholder="金門縣金寧鄉大學路一號" /></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="submit" asp-page-handler="Add">Add</button>
+        <button type="submit" formnovalidate asp-page-handler="Cancel">Cancel</button>
+    </form>
+    <div>@Model.message</div>
+</div>
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
